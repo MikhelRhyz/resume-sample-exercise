@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background: url("images/business-man-2452808_1280.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    118deg,
+    rgb(4, 25, 38),
+    rgba(102, 128, 154, 0.5)
+  );
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+nav {
+  background-color: rgb(4, 25, 38);
+  max-width: 17rem;
+  height: 100vh;
+  padding: 1rem;
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.headset {
+  color: rgb(3, 163, 212);
+  font-size: 1.2rem;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-normal {
+  font-weight: normal;
+}
+
+hr {
+  margin: 2px 0;
+}
+
+.name {
+  font-size: 1.5rem;
+}
+
+.lower-nav-links a {
+  color: rgb(78, 99, 121);
+  padding: 1.5rem 0;
+  border-bottom: 3px solid rgb(9, 28, 42);
+}
+
+.lower-nav-links li:last-child a {
+  border-bottom: none;
+}
+
+.slogan-container {
+  position: absolute;
+  right: 0;
+  margin: 7rem 0;
+  width: 75%;
+}
+
+.slogan {
+  color: white;
+  position: relative;
+  z-index: 2;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.play-audio {
+  z-index: 2;
+  position: relative;
+}
+
+.play-audio img {
+  width: 10%;
+}
+
+.play-audio .soundwave {
+  width: 75%;
+  margin-left: 1rem;
+  max-height: 17rem;
+}
+
+@media screen and (max-width: 667px) {
+  nav {
+    overflow: scroll;
+  }
+
+  .slogan-container {
+    margin: 1.5rem 0;
+    width: 60%;
+  }
+
+  .slogan {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .main {
+    background-position: center left;
+    height: 100%;
+  }
+
+  nav {
+    width: 100%;
+    max-width: none;
+    float: none;
+  }
+
+  .profile li {
+    text-align: center;
+  }
+
+  .slogan-container {
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+
+  .slogan {
+    text-align: center;
+  }
+
+  .play-audio {
+    padding: 0 2rem;
+  }
+}
